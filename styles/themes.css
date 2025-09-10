@@ -1,0 +1,451 @@
+/* Theme System */
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Neon Theme */
+[data-theme="neon"] {
+    --primary-color: #00ffff;
+    --primary-dark: #00e6e6;
+    --primary-light: #33ffff;
+    
+    --secondary-color: #ff00ff;
+    --secondary-dark: #e600e6;
+    --secondary-light: #ff33ff;
+    
+    --accent-color: #00ff00;
+    --accent-dark: #00e600;
+    --accent-light: #33ff33;
+    
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #888888;
+    
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --gradient-success: linear-gradient(135deg, var(--accent-color), #00ff88);
+    --gradient-error: linear-gradient(135deg, #ff0066, #ff3366);
+}
+
+[data-theme="neon"] .game-title,
+[data-theme="neon"] .menu-hero h2,
+[data-theme="neon"] .result-content h2 {
+    text-shadow: 0 0 10px var(--primary-color);
+    animation: neon 2s ease-in-out infinite;
+}
+
+[data-theme="neon"] .flashcard {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+[data-theme="neon"] .answer-btn:hover {
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+    --primary-color: #0ea5e9;
+    --primary-dark: #0284c7;
+    --primary-light: #38bdf8;
+    
+    --secondary-color: #06b6d4;
+    --secondary-dark: #0891b2;
+    --secondary-light: #22d3ee;
+    
+    --accent-color: #10b981;
+    --accent-dark: #059669;
+    --accent-light: #34d399;
+    
+    --bg-primary: #0c1e2e;
+    --bg-secondary: #1e3a5f;
+    --bg-tertiary: #2d5a87;
+    --text-primary: #e0f2fe;
+    --text-secondary: #b3e5fc;
+    --text-muted: #81d4fa;
+    
+    --gradient-primary: linear-gradient(135deg, #0ea5e9, #06b6d4);
+    --gradient-success: linear-gradient(135deg, #10b981, #06b6d4);
+    --gradient-error: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+[data-theme="ocean"] body {
+    background: linear-gradient(135deg, #0c1e2e 0%, #1e3a5f 50%, #2d5a87 100%);
+}
+
+[data-theme="ocean"] .floating-cards {
+    filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.5));
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+    --primary-color: #22c55e;
+    --primary-dark: #16a34a;
+    --primary-light: #4ade80;
+    
+    --secondary-color: #84cc16;
+    --secondary-dark: #65a30d;
+    --secondary-light: #a3e635;
+    
+    --accent-color: #f59e0b;
+    --accent-dark: #d97706;
+    --accent-light: #fbbf24;
+    
+    --bg-primary: #0f1f0f;
+    --bg-secondary: #1a2e1a;
+    --bg-tertiary: #2d4a2d;
+    --text-primary: #f0fdf4;
+    --text-secondary: #dcfce7;
+    --text-muted: #bbf7d0;
+    
+    --gradient-primary: linear-gradient(135deg, #22c55e, #84cc16);
+    --gradient-success: linear-gradient(135deg, #22c55e, #10b981);
+    --gradient-error: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+[data-theme="forest"] body {
+    background: linear-gradient(135deg, #0f1f0f 0%, #1a2e1a 50%, #2d4a2d 100%);
+}
+
+/* Sunset Theme */
+[data-theme="sunset"] {
+    --primary-color: #f97316;
+    --primary-dark: #ea580c;
+    --primary-light: #fb923c;
+    
+    --secondary-color: #ec4899;
+    --secondary-dark: #db2777;
+    --secondary-light: #f472b6;
+    
+    --accent-color: #eab308;
+    --accent-dark: #ca8a04;
+    --accent-light: #facc15;
+    
+    --bg-primary: #2d1b0f;
+    --bg-secondary: #4a2c1a;
+    --bg-tertiary: #6b3d2a;
+    --text-primary: #fef7ed;
+    --text-secondary: #fed7aa;
+    --text-muted: #fdba74;
+    
+    --gradient-primary: linear-gradient(135deg, #f97316, #ec4899);
+    --gradient-success: linear-gradient(135deg, #eab308, #f97316);
+    --gradient-error: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+[data-theme="sunset"] body {
+    background: linear-gradient(135deg, #2d1b0f 0%, #4a2c1a 50%, #6b3d2a 100%);
+}
+
+/* Purple Theme */
+[data-theme="purple"] {
+    --primary-color: #8b5cf6;
+    --primary-dark: #7c3aed;
+    --primary-light: #a78bfa;
+    
+    --secondary-color: #d946ef;
+    --secondary-dark: #c026d3;
+    --secondary-light: #e879f9;
+    
+    --accent-color: #06b6d4;
+    --accent-dark: #0891b2;
+    --accent-light: #22d3ee;
+    
+    --bg-primary: #1e1b2e;
+    --bg-secondary: #2d2a4a;
+    --bg-tertiary: #3d3a6b;
+    --text-primary: #f3f4f6;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+    
+    --gradient-primary: linear-gradient(135deg, #8b5cf6, #d946ef);
+    --gradient-success: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    --gradient-error: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+[data-theme="purple"] body {
+    background: linear-gradient(135deg, #1e1b2e 0%, #2d2a4a 50%, #3d3a6b 100%);
+}
+
+/* Cyberpunk Theme */
+[data-theme="cyberpunk"] {
+    --primary-color: #ff0080;
+    --primary-dark: #e6006b;
+    --primary-light: #ff3399;
+    
+    --secondary-color: #00ff80;
+    --secondary-dark: #00e66b;
+    --secondary-light: #33ff99;
+    
+    --accent-color: #8000ff;
+    --accent-dark: #6b00e6;
+    --accent-light: #9933ff;
+    
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a0a1a;
+    --bg-tertiary: #2a1a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #ff80ff;
+    --text-muted: #80ff80;
+    
+    --gradient-primary: linear-gradient(135deg, #ff0080, #00ff80);
+    --gradient-success: linear-gradient(135deg, #00ff80, #8000ff);
+    --gradient-error: linear-gradient(135deg, #ff0080, #ff8000);
+}
+
+[data-theme="cyberpunk"] body {
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 255, 128, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(128, 0, 255, 0.1) 0%, transparent 50%),
+        #0a0a0a;
+}
+
+[data-theme="cyberpunk"] .flashcard,
+[data-theme="cyberpunk"] .answer-btn,
+[data-theme="cyberpunk"] .menu-btn {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+}
+
+[data-theme="cyberpunk"] .game-title {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 10px var(--primary-color),
+        0 0 15px var(--primary-color);
+}
+
+/* Retro Theme */
+[data-theme="retro"] {
+    --primary-color: #fbbf24;
+    --primary-dark: #f59e0b;
+    --primary-light: #fcd34d;
+    
+    --secondary-color: #fb7185;
+    --secondary-dark: #f43f5e;
+    --secondary-light: #fda4af;
+    
+    --accent-color: #34d399;
+    --accent-dark: #10b981;
+    --accent-light: #6ee7b7;
+    
+    --bg-primary: #1f2937;
+    --bg-secondary: #374151;
+    --bg-tertiary: #4b5563;
+    --text-primary: #f9fafb;
+    --text-secondary: #e5e7eb;
+    --text-muted: #d1d5db;
+    
+    --gradient-primary: linear-gradient(135deg, #fbbf24, #fb7185);
+    --gradient-success: linear-gradient(135deg, #34d399, #fbbf24);
+    --gradient-error: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+[data-theme="retro"] .flashcard,
+[data-theme="retro"] .answer-btn,
+[data-theme="retro"] .menu-btn {
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+}
+
+[data-theme="retro"] .game-title {
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Minimal Theme */
+[data-theme="minimal"] {
+    --primary-color: #000000;
+    --primary-dark: #1f2937;
+    --primary-light: #374151;
+    
+    --secondary-color: #6b7280;
+    --secondary-dark: #4b5563;
+    --secondary-light: #9ca3af;
+    
+    --accent-color: #ef4444;
+    --accent-dark: #dc2626;
+    --accent-light: #f87171;
+    
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --bg-tertiary: #f3f4f6;
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+    
+    --gradient-primary: linear-gradient(135deg, #000000, #6b7280);
+    --gradient-success: linear-gradient(135deg, #10b981, #000000);
+    --gradient-error: linear-gradient(135deg, #ef4444, #dc2626);
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="minimal"] .flashcard,
+[data-theme="minimal"] .answer-btn,
+[data-theme="minimal"] .menu-btn {
+    border-radius: 0;
+    border: 1px solid var(--bg-tertiary);
+}
+
+[data-theme="minimal"] .game-title {
+    font-weight: 400;
+    color: var(--text-primary);
+    background: none;
+    -webkit-text-fill-color: initial;
+}
+
+/* Theme Transition */
+* {
+    transition: 
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-selector {
+    position: relative;
+}
+
+.theme-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+    min-width: 150px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    display: none;
+}
+
+.theme-dropdown.active {
+    display: block;
+    animation: fadeInDown 0.3s ease-out;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.875rem;
+}
+
+.theme-option:hover {
+    background: var(--bg-tertiary);
+}
+
+.theme-option.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.theme-preview {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-tertiary);
+}
+
+.theme-preview.default {
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+}
+
+.theme-preview.light {
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+}
+
+.theme-preview.neon {
+    background: linear-gradient(135deg, #00ffff, #ff00ff);
+}
+
+.theme-preview.ocean {
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+}
+
+.theme-preview.forest {
+    background: linear-gradient(135deg, #22c55e, #84cc16);
+}
+
+.theme-preview.sunset {
+    background: linear-gradient(135deg, #f97316, #ec4899);
+}
+
+.theme-preview.purple {
+    background: linear-gradient(135deg, #8b5cf6, #d946ef);
+}
+
+.theme-preview.cyberpunk {
+    background: linear-gradient(135deg, #ff0080, #00ff80);
+}
+
+.theme-preview.retro {
+    background: linear-gradient(135deg, #fbbf24, #fb7185);
+}
+
+.theme-preview.minimal {
+    background: linear-gradient(135deg, #000000, #6b7280);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --bg-primary: #000000;
+        --bg-secondary: #1a1a1a;
+        --bg-tertiary: #333333;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --text-muted: #999999;
+        --primary-color: #ffffff;
+        --secondary-color: #ffff00;
+        --accent-color: #00ff00;
+        --success-color: #00ff00;
+        --error-color: #ff0000;
+        --warning-color: #ffff00;
+        --info-color: #00ffff;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .game-header,
+    .powerups-container,
+    .game-over-actions,
+    .waiting-actions,
+    .setup-actions {
+        display: none !important;
+    }
+}
